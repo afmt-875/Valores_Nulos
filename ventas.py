@@ -30,7 +30,7 @@ df['almacen'] =df['almacen'].fillna(method='bfill')
 
 # rellena con ceros la columna panaderia
 df['panaderia'] =df['panaderia'].fillna(0)
-#print(df.isnull().sum())
+print(df.isnull().sum())
 
 #Convertir DataFrame a CSV
 df.to_csv('ventas_totales_limpio.csv')
